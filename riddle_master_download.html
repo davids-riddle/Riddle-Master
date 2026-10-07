@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Riddle Master - এখনই ডাউনলোড করুন</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #1a0a2e 0%, #2d1b4e 40%, #1a0a2e 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 15px;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .top-banner {
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 10px 16px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+            line-height: 1.4;
+        }
+        
+        .logo-area {
+            margin: 15px 0 20px;
+        }
+        
+        .logo-area img {
+            width: 110px;
+            height: 110px;
+            border-radius: 24px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            border: 3px solid #fbbf24;
+        }
+        
+        .game-title {
+            font-size: 32px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #e0d4ff;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 22px;
+            box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+        }
+        
+        .highlight-box h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #fbbf24;
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        
+        .step {
+            flex: 1;
+            background: rgba(255,255,255,0.12);
+            border-radius: 14px;
+            padding: 12px 6px;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+        
+        .step-num {
+            display: inline-block;
+            background: #fbbf24;
+            color: #1a0a2e;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            font-weight: 800;
+            font-size: 13px;
+            line-height: 22px;
+            margin-bottom: 6px;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        
+        .feature {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 30px;
+            padding: 8px 14px;
+            font-size: 13px;
+        }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(90deg, #16a34a, #15803d);
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(22, 163, 74, 0.5);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 15px;
+            animation: pulse 2s infinite;
+        }
+        
+        .download-btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(22, 163, 74, 0.7);
+        }
+        
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(22, 163, 74, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(22, 163, 74, 0); }
+        }
+        
+        .note {
+            font-size: 12px;
+            color: #a78bfa;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #7c6b9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="top-banner">
+            অনিশ্চিত অনলাইন আয় নয় — এবার নিজের বুদ্ধিতে খেলুন, কয়েন জমান!
+        </div>
+        
+        <div class="logo-area">
+            <!-- Placeholder for logo - using emoji style -->
+            <div style="width:110px;height:110px;margin:0 auto;background:linear-gradient(135deg,#7c3aed,#4f46e5);border-radius:24px;display:flex;align-items:center;justify-content:center;font-size:50px;border:3px solid #fbbf24;box-shadow:0 8px 25px rgba(0,0,0,0.4);">
+                🧠
+            </div>
+        </div>
+        
+        <h1 class="game-title">Riddle Master</h1>
+        <p class="subtitle">ধাঁধার উত্তর দিতে পারেন?<br>তাহলে এই চ্যালেঞ্জ আপনার জন্য!</p>
+        
+        <div class="highlight-box">
+            <h2>কীভাবে টাকা আয় করবেন?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">১</div>
+                    ধাঁধা সমাধান করুন
+                </div>
+                <div class="step">
+                    <div class="step-num">২</div>
+                    কয়েন জমান
+                </div>
+                <div class="step">
+                    <div class="step-num">৩</div>
+                    টাকা তোলার রিকোয়েস্ট পাঠান
+                </div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">💡 অটিকে গেলে হিন্ট</div>
+            <div class="feature">🔊 ধাঁধা পড়ে শোনায়</div>
+            <div class="feature">🌐 নিজের ভাষায় খেলুন</div>
+        </div>
+        
+        <!-- Main CTA Button -->
+        <a href="https://github.com/nurulhuda5271-pixel/Riddle-Master/releases/download/v1.0/riddle_master_player.2.apk" 
+           class="download-btn" 
+           id="downloadBtn" download>
+            ⬇️ এখনই ডাউনলোড করুন
+        </a>
+        
+        <p class="note">
+            Android APK • সরাসরি ডাউনলোড<br>
+            ইনস্টল করার সময় “Unknown sources” অনুমতি দিন
+        </p>
+        
+        <div class="footer">
+            © Riddle Master • Play Smart, Earn Smart
+        </div>
+        
+    </div>
+
+    <script>
+        // Optional: track click (you can later connect analytics)
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            console.log('Download button clicked');
+        });
+    </script>
+</body>
+</html>
