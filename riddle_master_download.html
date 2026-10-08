@@ -169,6 +169,19 @@
             line-height: 1.4;
         }
         
+        .chrome-tip {
+            display: none;
+            margin: 0 0 16px;
+            padding: 12px 14px;
+            background: rgba(251, 191, 36, 0.12);
+            border: 1px solid #fbbf24;
+            border-radius: 14px;
+            color: #fde68a;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        
         .footer {
             margin-top: 30px;
             font-size: 12px;
@@ -217,6 +230,11 @@
             <div class="feature">🌐 নিজের ভাষায় খেলুন</div>
         </div>
         
+        <div class="chrome-tip" id="chromeTip">
+            ⚠️ ডাউনলোড না হলে ওপরের ডানদিকের <b>⋮</b> চেপে<br>
+            <b>“Open in Chrome”</b> বেছে নিন, তারপর আবার ডাউনলোড বাটন চাপুন ✅
+        </div>
+        
         <!-- Main CTA Button -->
         <a href="https://github.com/davids-riddle/Riddle-Master/releases/download/v1.0/riddle_master_player.2.apk" 
            class="download-btn" 
@@ -226,7 +244,8 @@
         
         <p class="note">
             Android APK • সরাসরি ডাউনলোড<br>
-            ইনস্টল করার সময় “Unknown sources” অনুমতি দিন
+            ইনস্টল করার সময় “Unknown sources” অনুমতি দিন<br>
+            ডাউনলোড না হলে ⋮ চেপে “Open in Chrome” বেছে নিন
         </p>
         
         <div class="footer">
@@ -236,6 +255,14 @@
     </div>
 
     <script>
+        // Facebook / Messenger / Instagram এর ভেতরের ব্রাউজারে সতর্কবার্তা দেখাও
+        (function () {
+            var ua = navigator.userAgent || '';
+            if (/FBAN|FBAV|FB_IAB|FBIOS|Instagram|Messenger|Line\//i.test(ua)) {
+                document.getElementById('chromeTip').style.display = 'block';
+            }
+        })();
+
         // Optional: track click (you can later connect analytics)
         document.getElementById('downloadBtn').addEventListener('click', function() {
             console.log('Download button clicked');
